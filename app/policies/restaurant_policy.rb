@@ -14,6 +14,10 @@ class RestaurantPolicy < ApplicationPolicy
   end
 
   def create?
-    true
+    update?
+  end
+
+  def destroy?
+    update?
   end
 end
